@@ -40,7 +40,7 @@ do
     java -jar $ALIGN \
         R="$GENOMEFOLDER"/"$GENOME" \
         I="$ALIGNEDFOLDER"/"$file" \
-        O="METRICSFOLDER"/"$file"_alignment_metrics.txt
+        O="$METRICSFOLDER"/"$file"_alignment_metrics.txt
 
     echo "Computing insert size metrics for $file"
     java -jar $INSERT \
